@@ -13,21 +13,13 @@ import { AngularFireModule } from '@angular/fire';
 import { AngularFirestoreModule } from '@angular/fire/firestore';
 import { Firebase } from '@ionic-native/firebase/ngx';
 import { FcmService } from './fcm.service';
+import { firebaseConfig } from '../../.secret/firebase.conf';
 
-const config = {
-    apiKey: "AIzaSyAzEPl80nKnzVkmkW0GwwXfd6yPS5RuCTA",
-    authDomain: "nephalem-48b95.firebaseapp.com",
-    databaseURL: "https://nephalem-48b95.firebaseio.com",
-    projectId: "nephalem-48b95",
-    storageBucket: "nephalem-48b95.appspot.com",
-    messagingSenderId: "193459787861",
-    appId: "1:193459787861:web:37e9f4304dd04e82"
-}
 
 @NgModule({
   declarations: [AppComponent],
   entryComponents: [],
-  imports: [BrowserModule, IonicModule.forRoot(), AppRoutingModule, AngularFireModule.initializeApp(config), AngularFirestoreModule ],
+  imports: [BrowserModule, IonicModule.forRoot(), AppRoutingModule, AngularFireModule.initializeApp(firebaseConfig), AngularFirestoreModule ],
   providers: [
     StatusBar,
     SplashScreen,
