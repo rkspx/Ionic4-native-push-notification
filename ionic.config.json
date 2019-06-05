@@ -1,0 +1,7 @@
+{
+  "name": "ionic4-native-push-notification",
+  "integrations": {
+    "cordova": {}
+  },
+  "type": "angular"
+}
